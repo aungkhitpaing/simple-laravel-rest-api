@@ -1,0 +1,108 @@
+{
+	"info": {
+		"_postman_id": "0f244bc6-3969-424c-9107-9e37e871afc1",
+		"name": "simple_laravel_restful_api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getFields",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "Sniq0YVcEtgHya7c1i6sofPQaqCq1QGyT2HcCKOsqlcuvhLBgU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/fields",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"fields"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getFieldsById",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "Sniq0YVcEtgHya7c1i6sofPQaqCq1QGyT2HcCKOsqlcuvhLBgU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/fields/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"fields",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PostFields",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "Sniq0YVcEtgHya7c1i6sofPQaqCq1QGyT2HcCKOsqlcuvhLBgU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "I m akp",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8000/api/fields",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"fields"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
